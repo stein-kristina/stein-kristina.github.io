@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liangzhi Wang - Homepage</title>
+    <style>
+        /* Base color variables */
+        :root {
+            --primary-color: #1e3a8a;       
+            --accent-color: #3b82f6;        
+            --bg-color: #f8fafc;            
+            --card-bg: #ffffff;             
+            --text-main: #1e293b;           
+            --text-muted: #64748b;          
+            --border-color: #e2e8f0;        
+        }
+
+        /* Reset styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Global body style */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        /* Main container layout */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Profile card header */
+        header {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Avatar placeholder style */
+        .avatar-placeholder {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            line-height: 90px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 8px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        /* Contact links section */
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            padding: 6px 16px;
+            background: var(--bg-color);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            transition: all 0.25s ease;
+        }
+
+        .contact-links a:hover {
+            color: white;
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* General section style */
+        section {
+            background: var(--card-bg);
+            padding: 35px 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 1.45rem;
+            color: var(--primary-color);
+            margin-bottom: 22px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--text-main);
+            margin-bottom: 16px;
+            font-size: 1.05rem;
+        }
+
+        /* Education timeline style */
+        .timeline {
+            position: relative;
+            padding-left: 24px;
+            border-left: 2px solid var(--border-color);
+            margin-top: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -31px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            border: 2px solid var(--card-bg);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        .time {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .degree {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--text-main);
+        }
+
+        .institution {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* Research interest tags */
+        .interests-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .tag {
+            background: #eff6ff;
+            color: #1e40af;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border: 1px solid #bfdbfe;
+        }
+
+        /* Footer layout */
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="avatar-placeholder">LW</div>
+            <h1>Liangzhi Wang (王亮智)</h1>
+            <p class="tagline">深度学习 | 视觉生成研究</p>
+            <p style="color: var(--text-muted); font-size: 1rem;">
+                中山大学计算机学院 · 硕士研究生
+            </p>
+            <div class="contact-links">
+                <a href="https://github.com/你的GitHub用户名" target="_blank">GitHub</a>
+                <a href="mailto:你的邮箱@mail.sysu.edu.cn">Email</a>
+                <a href="#" style="opacity: 0.6; cursor: not-allowed;">Google Scholar (暂无)</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>关于我 / About Me</h2>
+            <p>
+                你好！我是王亮智，目前是<strong>中山大学</strong>计算机学院的一名研一硕士研究生。
+            </p>
+            <p>
+                我热衷于探索人工智能的前沿技术，目前的研究重心主要围绕<strong>深度学习（Deep Learning）</strong>与<strong>视觉生成（Vision Generation）</strong>。
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>教育背景 / Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="time">2025.09 - 2028.06 (预计)</div>
+                    <div class="degree">计算机技术 · 硕士研究生</div>
+                    <div class="institution">中山大学 (Sun Yat-sen University) · 计算机学院</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="time">2021.09 - 2025.06</div>
+                    <div class="degree">计算机科学与技术 · 工学学士</div>
+                    <div class="institution">中山大学 (Sun Yat-sen University) · 计算机学院</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interests">
+            <h2>研究方向 / Research Interests</h2>
+            <p>目前主要关注以下技术领域的发展：</p>
+            <div class="interests-tags">
+                <div class="tag">深度学习 (Deep Learning)</div>
+                <div class="tag">视觉生成 (Vision Generation)</div>
+                <div class="tag">生成式模型 (Generative Models / AIGC)</div>
+                <div class="tag">计算机视觉 (Computer Vision)</div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Liangzhi Wang. Powered by GitHub Pages.</p>
+        </footer>
+    </div>
+</body>
+</html>
